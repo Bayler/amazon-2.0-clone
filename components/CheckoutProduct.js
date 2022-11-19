@@ -44,7 +44,9 @@ function CheckoutProduct({
             <p>{title}</p>
             <div className='flex items-center'>
                 {Array(rating).fill().map((_, i) => (
-                    <StarIcon className='h-5 text-yellow-500'/>
+                    <StarIcon 
+                        key={i}
+                        className='h-5 text-yellow-500'/>
                 ))}
             </div>
 
